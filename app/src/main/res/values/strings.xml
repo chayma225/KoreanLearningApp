@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">L\'île du coréen</string>
+
+    <!-- Main Activity -->
+    <string name="main_title">L\'île du coréen</string>
+    <string name="main_subtitle">한국어 설 - Votre aventure linguistique</string>
+    <string name="explore_villages">Explorez les villages</string>
+    <string name="complete_lessons">Complétez les leçons pour débloquer de nouveaux villages</string>
+    <string name="points"> 🏅 </string>
+    <string name="profile">Profil</string>
+    <string name="settings">Paramètres</string>
+
+    <!-- Villages -->
+    <string name="village_welcome">Village de bienvenue</string>
+    <string name="village_welcome_korean">환영 마을</string>
+    <string name="village_market">Village du marché</string>
+    <string name="village_market_korean">시장 마을</string>
+    <string name="village_temple">Village du temple</string>
+    <string name="village_temple_korean">사찰 마을</string>
+    <string name="village_mountain">Village de montagne</string>
+    <string name="village_mountain_korean">산 마을</string>
+    <string name="village_coastal">Village côtier</string>
+    <string name="village_coastal_korean">해변 마을</string>
+
+    <!-- Lessons -->
+    <string name="vocabulary">Vocabulaire</string>
+    <string name="grammar">Grammaire</string>
+    <string name="pronunciation">Prononciation</string>
+    <string name="lessons_completed">Leçons complétées</string>
+
+    <!-- Buttons -->
+    <string name="visit">Visiter</string>
+    <string name="start_lesson">Commencer une leçon</string>
+    <string name="next">Suivant</string>
+    <string name="previous">Précédent</string>
+    <string name="submit">Soumettre</string>
+    <string name="start_quiz">Commencer le Quiz</string>
+    <string name="mark_completed">Marquer comme Complété</string>
+    <string name="quiz_finished">Quiz terminé !</string>
+    <string name="quiz_score">Score total : %d points.</string>
+    <string name="cancel">Annuler</string>
+    <string name="logout">Se déconnecter</string>
+
+    <!-- Messages -->
+    <string name="lesson_completed">Leçon complétée !</string>
+    <string name="points_earned">Points gagnés :</string>
+    <string name="congratulations">Félicitations !</string>
+    <string name="error">Erreur</string>
+    <string name="loading">Chargement...</string>
+
+    <!-- Profile -->
+    <string name="my_profile">Mon profil</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="total_points">Points totaux</string>
+    <string name="badges">Badges</string>
+    <string name="progress">Progression</string>
+
+    <!-- Settings -->
+    <string name="app_settings">Paramètres</string>
+    <string name="language">Langue</string>
+    <string name="notifications">Notifications</string>
+    <string name="sound">Son</string>
+    <string name="vibration">Vibration</string>
+    <string name="about">À propos</string>
+    <string name="version">Version</string>
+</resources>

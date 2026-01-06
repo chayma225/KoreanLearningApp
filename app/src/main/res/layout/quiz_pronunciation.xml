@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_light">
+
+    <!-- Header: Points and Progress (Reused from Vocabulary Quiz) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:max="10"
+            android:progress="1"
+            android:progressTint="@color/accent_cyan" />
+
+        <!-- Points Display -->
+    </RelativeLayout>
+
+    <!-- Question Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Instruction -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prononcez le mot suivant :"
+                android:textSize="18sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Hangeul -->
+            <TextView
+                android:id="@+id/pronunciation_hangeul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="안녕하세요"
+                android:textSize="48sp"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <!-- Romanization -->
+            <TextView
+                android:id="@+id/pronunciation_romanization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Annyeonghaseyo"
+                android:textSize="20sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Record Button -->
+            <ImageButton
+                android:id="@+id/record_button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/microphone"
+                android:background="@color/white"
+                android:contentDescription="Bouton d'enregistrement"
+                android:scaleType="centerInside"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/record_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appuyez pour enregistrer"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="8dp" />
+
+            <!-- Waveform Placeholder (Visual feedback) -->
+            <View
+                android:id="@+id/waveform_placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/background_dark"
+                android:layout_marginTop="16dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Feedback Container -->
+    <LinearLayout
+        android:id="@+id/feedback_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:background="@drawable/village_coastal">
+
+        <!-- Percentage Bar -->
+        <ProgressBar
+            android:id="@+id/pronunciation_score_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="78"
+            android:progressTint="@color/accent_green" />
+
+        <TextView
+            android:id="@+id/pronunciation_score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Votre prononciation : 78%"
+            android:textColor="@color/text_light"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/pronunciation_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Badge : Très bien !"
+            android:textColor="@color/text_light"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suivant"
+            android:layout_gravity="end"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/text_light"
+            android:background="@color/primary" />
+    </LinearLayout>
+
+
+</LinearLayout>
